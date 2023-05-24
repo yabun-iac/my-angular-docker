@@ -46,7 +46,7 @@ jobs:
           curl -fsSL https://get.pulumi.com | sh
           export PULUMI_ACCESS_TOKEN=${{secrets.PULUMI_TOKEN}}
           pulumi login
-          pulumi destroy -s dev -y
+          pulumi up -s dev -y
 
       
       #- name: "exec pulumi"
