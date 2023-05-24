@@ -21,6 +21,7 @@ const myImage = new docker.Image(imageName, {
     },
 });
 
+
 // Deploy to Cloud Run. Some extra parameters like concurrency and memory are set for illustration purpose.
 const angularService = new gcp.cloudrun.Service("angular", {
     location,
